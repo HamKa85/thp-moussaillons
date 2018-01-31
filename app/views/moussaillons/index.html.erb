@@ -1,0 +1,14 @@
+<br><br><br><br><h1>Article</h1>
+
+<% @corsairs.each do |corsair| %>
+
+  <h2><%= corsair.age %></h2>
+
+  <h2><%= corsair.first_name %></h2>
+  
+  <h2><%= corsair.likeness %></h2>
+
+  <a href="<% corsair_path(corsair.id) %>" class="btn btn-primary">Consulter</a>
+ 
+
+<% end %>
